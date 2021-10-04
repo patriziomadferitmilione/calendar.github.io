@@ -1,0 +1,202 @@
+body {
+    font-family: 'Acme', sans-serif;
+    background: linear-gradient(45deg, rgba(3, 0, 39, 0.9), rgba(94, 116, 127)) center/cover;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Acme', sans-serif;
+    padding-bottom: 5vh;
+}
+
+/* header */
+
+body h1 {
+    font-family: 'Acme', sans-serif;
+    padding-top: 5vh;
+    font-size: 8vh;
+}
+
+#monthAndYear {
+    text-align: center;
+    color: #f0ad4e;
+}
+
+/* card body */
+
+table {
+    border-radius: 10px;
+}
+
+table th {
+    border-radius: 10px;
+}
+
+table td {
+    border-radius: 10px;
+}
+
+table td a {
+    color: #f0ad4e;
+}
+
+table td a:hover{
+    color: #f0ad4e;
+    text-decoration: none;
+}
+
+#calendar-body {
+    font-size: 7vh;
+    color: #f0ad4e;
+}
+
+#calendar {
+    border-spacing: 2vh;
+    border-collapse: separate;
+    color: #f0ad4e;
+}
+
+/* footer */
+
+#bottom-button-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Acme', sans-serif;
+    padding-bottom: 5vh;
+    margin-top: 3vh;
+}
+
+#bottom-button-1 button {
+    margin-left: 2vh;
+    margin-right: 2vh;
+    width: 25vh;
+    margin-top: 2vh;
+}
+
+#bottom-button-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Acme', sans-serif;
+    padding-bottom: 5vh;
+    color: #f0ad4e;
+}
+
+#bottom-button-2 select {
+    width: 25vh;
+}
+
+select#month {
+    background-color: #f0ad4e;
+    margin-right: 4vh;
+}
+
+select#year {
+    background-color: #f0ad4e;
+}
+
+select option {
+    background: #f0ad4e;
+}
+
+/* day events */
+
+.events {
+    padding: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* title */
+
+#events-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f0ad4e;
+}
+
+/* body */
+
+.events .card-body label{
+    font-family: 'Acme', sans-serif;
+    font-size: 6vh;
+    color: #f0ad4e
+}
+
+.events .date-picker {
+    margin-top: 3vh;
+}
+
+input[type=datetime-local] {
+    font-family: 'Acme', sans-serif;
+    font-size: 4vh;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    width: 40vh;
+}
+
+.events .card-body table {
+    font-family: 'Acme', sans-serif;
+    font-size: 4vh;
+}
+
+
+
+/* responsive design */
+
+
+/* mobiles */
+@media only screen and (max-width: 414px) {
+    body {
+        background: url(./images/mobile-solid-color-background.jpeg) center/cover;
+    }
+
+    body h1 {
+        font-size: 6vh;
+    }
+
+    .calendar-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #calendar {
+        transform: scale(0.635);
+        margin-top: -15vh;
+        margin-bottom: -15vh;
+    }
+
+    #calendar-body {
+        font-size: 3vh;
+    }
+
+    .bottom-button-1 {
+        margin-left: 6vh;
+    }
+
+    .bottom-button-2 {
+        margin-left: 8vh;
+    }
+
+    select#month {
+        margin-bottom: 2vh;
+    }
+}
+
+
+/* small mobiles */
+@media only screen and (max-width: 375px) {
+    body {
+        background: url(./images/mobile-solid-color-background.jpeg) center/cover;
+    }
+}
