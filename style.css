@@ -120,6 +120,8 @@ select option {
     justify-content: center;
     align-items: center;
     color: #f0ad4e;
+    font-family: 'Acme', sans-serif;
+    font-size: 5vh;
 }
 
 /* body */
@@ -171,21 +173,27 @@ input[type=datetime-local] {
     }
 
     #calendar {
-        transform: scale(0.635);
+        transform: scale(0.7);
+        margin-top: -15vh;
+        margin-bottom: -15vh;
+    }
+
+    #calendar-card {
+        transform: scale(0.8);
         margin-top: -15vh;
         margin-bottom: -15vh;
     }
 
     #calendar-body {
-        font-size: 3vh;
+        font-size: 2.8vh;
     }
 
     .bottom-button-1 {
-        margin-left: 6vh;
+        margin-left: 8.5vh;
     }
 
     .bottom-button-2 {
-        margin-left: 8vh;
+        margin-left: 10.5vh;
     }
 
     select#month {
@@ -193,10 +201,3 @@ input[type=datetime-local] {
     }
 }
 
-
-/* small mobiles */
-@media only screen and (max-width: 375px) {
-    body {
-        background: url(./images/mobile-solid-color-background.jpeg) center/cover;
-    }
-}
