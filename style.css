@@ -201,5 +201,9 @@ input[type=datetime-local] {
     select#month {
         margin-bottom: 2vh;
     }
+
+    .events .card-body table {
+    font-size: 3vh;
+    }
 }
 
