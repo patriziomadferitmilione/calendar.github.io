@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- browser icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <!-- mobile icon -->
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+    <!-- main css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <title>Events</title>
+</head>
+<body>
+    <!-- events -->
+
+   
+    <section class="events" id="appointments">
+        <div class="card bg-dark" id="event-card">
+            <!-- title -->
+            <div class="card-header text-center" id="events-title">
+                    <h1>Reminders</h1>
+            </div>
+
+            <!-- body -->
+            <div class="events-container card-body text-center">
+                <form id="event-form">
+                    <div class="form-group m-1">
+                        <label for="title">Event Name</label>
+                        <input type="text" id="title" class="form-control">
+                    </div>
+                    <div class="form-group m-1">
+                        <label class="date-picker" for="date-picker">Date - Time</label>
+                        <br>
+                        <input type="datetime-local" id="date-picker" name="date-picker">
+                    </div>
+                    <input type="submit" value="Add Event" class="btn btn-secondary mt-3">
+                </form>
+                <table class="table table-striped mt-5 mb-5 pb-5">
+                    <thead class="text-warning">
+                        <tr>
+                            <th>Event</th>
+                            <th>Date - Time</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="event-list"></tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <h1 id="events" class="text-warning"><a href="./index.html">Calendar</a></h1>
+
+    <!-- script -->
+    <script src="./eventScript.js"></script>
+
+</body>
+</html>

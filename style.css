@@ -12,6 +12,19 @@ body {
     padding-bottom: 5vh;
 }
 
+#events {
+    text-align: center;
+}
+
+#events a {
+    text-decoration: none;
+    color: #f0ad4e;
+}
+
+#events a:hover {
+    color: lightgoldenrodyellow;
+}
+
 /* header */
 
 body h1 {
@@ -71,10 +84,7 @@ table td a:hover{
 }
 
 #bottom-button-1 button {
-    margin-left: 2vh;
-    margin-right: 2vh;
     width: 25vh;
-    margin-top: 2vh;
 }
 
 #bottom-button-2 {
@@ -82,7 +92,6 @@ table td a:hover{
     align-items: center;
     justify-content: center;
     font-family: 'Acme', sans-serif;
-    padding-bottom: 5vh;
     color: #f0ad4e;
 }
 
@@ -112,6 +121,10 @@ select option {
     align-items: center;
 }
 
+#event-card {
+    width: 50%;
+}
+
 
 /* title */
 
@@ -128,7 +141,7 @@ select option {
 
 .events .card-body label{
     font-family: 'Acme', sans-serif;
-    font-size: 6vh;
+    font-size: 4vh;
     color: #f0ad4e
 }
 
@@ -157,13 +170,20 @@ input[type=datetime-local] {
 
 
 /* mobiles */
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 430px) {
     body {
         background: url(./images/mobile-solid-color-background.jpeg) center/cover;
     }
 
     body h1 {
         font-size: 6vh;
+    }
+
+    .main-calendar-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .calendar-container {
@@ -174,28 +194,14 @@ input[type=datetime-local] {
 
     #calendar {
         transform: scale(0.75);
-        margin-top: -12vh;
-        margin-bottom: -15vh;
-        margin-right: 17vh;
-
     }
 
     #calendar-card {
-        transform: scale(0.9);
-        margin-top: -15vh;
-        margin-bottom: -15vh;
+        width: 100%;
     }
 
     #calendar-body {
         font-size: 2.8vh;
-    }
-
-    .bottom-button-1 {
-        margin-left: 10vh;
-    }
-
-    .bottom-button-2 {
-        margin-left: 12vh;
     }
 
     select#month {
@@ -204,6 +210,14 @@ input[type=datetime-local] {
 
     .events .card-body table {
     font-size: 3vh;
+    }
+
+    #event-card {
+        width: 95%;
+    }
+
+    #date-picker {
+        width: 90%;
     }
 }
 
